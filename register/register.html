@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+<h1 style="display: flex;justify-content: center;align-content: center;margin-top:100px">Register</h1>
+
+<form action="register.html" method="Post" style="display: list-item;">
+    <label for="name">Full name:</label>
+    <input type="text" name="name" id="name" maxlength="50" required>
+
+    <br>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required placeholder="imeginemail@gmail.com">
+
+
+    <br>
+    <label for="select">Favourite day:</label>
+    <select name="select" id="select">
+        <option value="-" selected>>- Vyberte -<</option>
+        <optgroup label="Víkend">
+            <option value="Sobota">Sobota</option>
+            <option value="Neděle">Neděle</option>
+        </optgroup>
+        <optgroup label="Pracovní dny">
+            <option value="Pondělí">Pondělí</option>
+            <option value="Úterý">Úterý</option>
+            <option value="Středa">Středa</option>
+            <option value="Čtvrtek">Čtvrtek</option>
+            <option value="Pátek">Pátek</option>
+        </optgroup>
+    </select>
+
+    <br>
+    <label for="age">Age</label>
+    <input type="number" name="Age" id="age" min="0" step="1" max="99">
+    <br>
+    <label for="Heslo">Password:</label>
+    <input type="password" name="Password" id="Heslo" required minlength="8">
+
+    <br>
+    <label for="Heslo_2">Repeat Password:</label>
+    <input type="password" name="Password_2" id="Heslo_2" required minlength="8">
+
+    <br>
+    <label for="checkbox">I agree with all conditions</label>
+    <input type="checkbox" name="Agree" id="checkbox">
+
+    <br>
+    <button>Sign up</button>
+
+    <div>
+        <p>Have an account? <span><a href="register.html">Login</a></span></p>
+    </div>
+
+
+</form>
+
+</body>
+</html>
